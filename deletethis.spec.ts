@@ -1,6 +1,6 @@
 import {test,expect,chromium}  from "@playwright/test"
 
-test("Amazon test new case for gitconflicts",async()=>
+test("checkout feature",async()=>
 {
 
     console.log("1. Starting browser");
