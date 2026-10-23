@@ -24,4 +24,5 @@ test("again made some changes checkout feature",async()=>
   console.log("6. Product found");
    console.log(productText)
     
+   //change thecode here 
 })
