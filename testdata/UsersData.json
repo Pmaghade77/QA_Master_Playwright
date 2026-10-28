@@ -1,0 +1,38 @@
+
+[
+    {
+       "fistName":"Alice",
+       "lastName":"chopper",
+       "Email":"wpwpvw@gmail.com",
+       "Telephone":"1234567890",
+       "Password":"Passwod@123",
+       "subscribeNewsLetter":"Yes"
+
+
+
+    },
+    {
+       "fistName":"cAlice",
+       "lastName":"Bopper",
+       "Email":"alsazmzaml@gmail.com",
+       "Telephone":"1234567890",
+       "Password":"Passwod@123",
+       "subscribeNewsLetter":"No"
+
+
+
+    },
+    {
+       "fistName":"Delice",
+       "lastName":"Topper",
+       "Email":"mmnamzomz@gmail.com",
+       "Telephone":"1234567890",
+       "Password":"Passwod@123",
+       "subscribeNewsLetter":"Yes"
+
+
+
+    }
+
+
+]

@@ -1,6 +1,6 @@
 import {test,expect,chromium}  from "@playwright/test"
 
-test("again made some changes checkout feature",async()=>
+test("Amazon test case",async()=>
 {
 
     console.log("1. Starting browser");
@@ -24,8 +24,4 @@ test("again made some changes checkout feature",async()=>
   console.log("6. Product found");
    console.log(productText)
     
-   //change thecode here 
-    //changes the code from remote main branch
-    //again changing the code from remote main branch
-    //merge conflict
 })
