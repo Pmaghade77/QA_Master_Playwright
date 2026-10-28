@@ -6,10 +6,13 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 2 : undefined,
-  reporter: process.env.CI
-         ? [['html', { open: 'never' }], ['junit', { outputFile: 'results.xml' }], ['github']]
-     : [['html']],
-
+ reporter: process.env.CI
+  ? [
+      ['html', { outputFolder: 'playwright-report', open: 'never' }],
+      ['junit', { outputFile: 'results.xml' }],
+      ['github']
+    ]
+  : [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     headless: !!process.env.CI,        // headed locally, headless on CI
     trace: 'on-first-retry',
