@@ -7,8 +7,8 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 2 : undefined,
   reporter: process.env.CI
-    ? [['html', { open: 'never' }], ['github']]
-    : [['html']],
+         ? [['html', { open: 'never' }], ['junit', { outputFile: 'results.xml' }], ['github']]
+     : [['html']],
 
   use: {
     headless: !!process.env.CI,        // headed locally, headless on CI
