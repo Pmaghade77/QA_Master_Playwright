@@ -1,8 +1,7 @@
 import{test,expect} from '@playwright/test'
 
 
-test("Handel Drop down", async({page}) =>
-{
+test("Handel Drop down @smoke @regression", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/")
    const countyDropDown =   page.locator('#country')
 
