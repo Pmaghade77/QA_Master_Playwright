@@ -31,7 +31,8 @@ for(let user of registrationData)
         await page.locator('#input-firstname').fill(user.fistName)
         await page.locator('#input-lastname').fill(user.lastName)
 
-        await page.locator('#input-email').fill(user.Email)
+        const uniqueEmail = `prashant.qa.${Date.now()}@example.com`;
+        await page.locator('#input-email').fill(uniqueEmail);
         await page.locator('#input-telephone').fill(user.Telephone)
         await page.locator('#input-password').fill(user.Password)
         await page.locator('#input-confirm').fill(user.Password)
